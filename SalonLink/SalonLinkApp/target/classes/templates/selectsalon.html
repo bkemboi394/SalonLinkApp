@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Salon Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Services offered by the salon</h2>
+<ul>
+    <li th:each="service : ${services}">
+        <span th:text="${service}"></span>
+    </li>
+</ul>
+
+<p>Select from the services offered by the salon:</p>
+
+<form action="/api/SalonLink/makereservation" method="post">
+    <label for="selectedService">Select Service:</label>
+    <select id="selectedService" name="selectedService" required>
+        <option value="" disabled selected>Select a service</option>
+        <option th:each="service : ${services}" th:value="${service}" th:text="${service}"></option>
+    </select>
+    <button type="submit">Make Reservation</button>
+</form>
+
+</body>
+</html>

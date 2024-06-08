@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Make Reservation</h2>
+
+
+<div th:if="${selectedservice}">
+    <p th:text="${selectedservice}"></p>
+</div>
+
+
+<form action="/api/SalonLink/makereservation" method="post">
+    <label for="selectedService">Select Service:</label>
+    <select id="selectedService" name="selectedService" required>
+        <option value="" disabled selected>Select a service</option>
+
+        <option th:each="service : ${services}" th:value="${service}" th:text="${service}"></option>
+    </select>
+    <button type="submit">Make Reservation</button>
+</form>
+
+</body>
+</html>
