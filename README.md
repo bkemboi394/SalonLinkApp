@@ -1,6 +1,15 @@
 # SalonLink-Java Application
+This was a class project for my Software Architecture and Design class at SMU that I am continuing to explore and build upon.
+
+Currently, this SalonLink application simplifies the discovery, selection, and booking of salon services, allowing users to browse nearby salons, pick services, and make bookings using a user-friendly interface. 
+
+I am in the process of:
+
+1. Getting the application to also allow salon owners to effectively manage the information about their salon.​
+2. Improving both the front-end and back-end parts of the application through additional features, etc. to improve its functionality and usability.
+   
 ## Client-Server Architecture
-This was a class project for my Software Architecture and Design class at SMU that I am continuing to explore and build upon . The Code for this application was developed in Java with spring boot Initialization in the IntellIJ IDEA 2023.3.2 IDE version 17.
+ This application is based on a Client-Server architecture. The Code was developed in Java with spring boot Initialization in the IntellIJ IDEA 2023.3.2 IDE version 17.
 
 ### JDK and IntellIJ Installation:
 
