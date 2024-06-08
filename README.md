@@ -1,6 +1,6 @@
-# SalonLink-Application
+# SalonLink-Java Application
 ## Client-Server Architecture
-The Source code and executables of the application for this architecture were added to the unselected folder. The Code for this application was developed in Java with spring boot Initialization in the IntellIJ IDEA 2023.3.2 IDE version 17.
+This was a class project for my Software Architecture and Design class at SMU that I am continuing to explore and build upon . The Code for this application was developed in Java with spring boot Initialization in the IntellIJ IDEA 2023.3.2 IDE version 17.
 
 ### JDK and IntellIJ Installation:
 
